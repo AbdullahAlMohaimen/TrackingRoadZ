@@ -4,41 +4,63 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CreateAccount extends AppCompatActivity implements View.OnClickListener{
 
-    EditText fullNameText,userNameText,emailText,phoneNumberText,signPasswordText;
+    EditText emailText,signPasswordText,fullName,phoneNumber;
     Button signUp,clear,signIn;
 
-    UserDetails userDetails;
-    DatabaseHelper databaseHelper;
+    FirebaseAuth mAuth;
+    FirebaseFirestore fStore;
 
+    ProgressBar progressBar;
+    String userID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
+        this.setTitle("SignUp");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        fullNameText=(EditText)findViewById(R.id.fullNameTextId);
-        userNameText=(EditText)findViewById(R.id.userNameTextId);
+
+        mAuth = FirebaseAuth.getInstance();
+        fStore=FirebaseFirestore.getInstance();
+        progressBar=(ProgressBar)findViewById(R.id.progressBarId);
+
+
+        fullName=(EditText)findViewById(R.id.FullNameId);
         emailText=(EditText)findViewById(R.id.emailTextId);
-        phoneNumberText=(EditText)findViewById(R.id.phoneTextId);
+        phoneNumber=(EditText)findViewById(R.id.phoneNumberId);
         signPasswordText=(EditText)findViewById(R.id.passwordId);
 
         signUp=(Button)findViewById(R.id.newSignUptId);
         clear=(Button)findViewById(R.id.signUpClearId);
         signIn=(Button)findViewById(R.id.signInId);
 
-        databaseHelper=new DatabaseHelper(this);
-        userDetails=new UserDetails();
 
         signIn.setOnClickListener(this);
         clear.setOnClickListener(this);
@@ -57,43 +79,117 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
 
-
-        if (view.getId() == R.id.signInId)
+        switch (view.getId())
         {
-            Intent signIn=new Intent(CreateAccount.this,MainActivity.class);
-            startActivity(signIn);
+            case R.id.signInId:
+
+                Intent signIn=new Intent(CreateAccount.this,MainActivity.class);
+                startActivity(signIn);
+                break;
+
+
+            case  R.id.signUpClearId:
+
+
+                fullName.setText("");
+                phoneNumber.setText("");
+                emailText.setText("");
+                signPasswordText.setText("");
+
+                break;
+
+
+            case R.id.newSignUptId:
+
+                userRegister();
+
+                break;
         }
-        if(view.getId()==R.id.signUpClearId)
+
+    }
+
+    private void userRegister() {
+
+
+        final String name=fullName.getText().toString();
+        final String email=emailText.getText().toString().trim();
+        final String phone=phoneNumber.getText().toString();
+        final String password=signPasswordText.getText().toString().trim();
+
+        if(email.isEmpty())
         {
-            fullNameText.setText("");
-            userNameText.setText("");
-            emailText.setText("");
-            phoneNumberText.setText("");
-            signPasswordText.setText("");
+            emailText.setError("Enter an email address");
+            emailText.requestFocus();
+            return;
         }
-        if(view.getId()==R.id.newSignUptId)
+
+        if(!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
-            String name=fullNameText.getText().toString();
-            String username=userNameText.getText().toString();
-            String email=emailText.getText().toString();
-            String phoneNumber=phoneNumberText.getText().toString();
-            String password=signPasswordText.getText().toString();
+            emailText.setError("Enter a valid email address");
+            emailText.requestFocus();
+            return;
+        }
 
-            userDetails.setName(name);
-            userDetails.setUsername(username);
-            userDetails.setEmail(email);
-            userDetails.setPhoneNumber(phoneNumber);
-            userDetails.setPassword(password);
 
-            long rowId=databaseHelper.insertData(userDetails);
+        if(password.isEmpty())
+        {
+            signPasswordText.setError("Enter a password");
+            signPasswordText.requestFocus();
+            return;
+        }
 
-            if (rowId>0)
-            {
-                Toast.makeText(getApplicationContext(),"Successfully SignUp",Toast.LENGTH_SHORT).show();
+        if(password.length()<6)
+        {
+            signPasswordText.setError("Minimum length of a password should be 6");
+            signPasswordText.requestFocus();
+            return;
+        }
+
+        progressBar.setVisibility(View.VISIBLE);
+
+        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                progressBar.setVisibility(View.GONE);
+                if (task.isSuccessful()) {
+                    // Sign in success, update UI with the signed-in user's information
+                    Toast.makeText(getApplicationContext(),"Successfully SignUp",Toast.LENGTH_SHORT).show();
+                    userID=mAuth.getCurrentUser().getUid();
+                    DocumentReference documentReference=fStore.collection("users").document(userID);
+
+                    Map<String,Object>user=new HashMap<>();
+                    user.put("fName",name);
+                    user.put("email",email);
+                    user.put("phone",phone);
+
+                    documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+
+                            Log.d("Success","onSuccess: User profile is created for "+userID);
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.d("Failure","onFailure: "+e.toString());
+                        }
+                    });
+
+                    Intent login=new Intent(getApplicationContext(),Login.class);
+                    startActivity(login);
+
+                } else {
+                    // If sign in fails, display a message to the user.
+                    if(task.getException() instanceof FirebaseAuthUserCollisionException)
+                    {
+                        Toast.makeText(getApplicationContext(),"User is already Registered",Toast.LENGTH_SHORT).show();
+                    }else
+                    {
+                        Toast.makeText(getApplicationContext(),"Error : "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
-            else {
-                Toast.makeText(getApplicationContext(),"Something Wrong",Toast.LENGTH_SHORT).show();
-            }
-        }
+        });
+
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/first"
-    android:weightSum="3"
+    android:weightSum="4"
     android:padding="5dp"
     android:orientation="vertical"
     tools:context=".Login">
@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="2"
         android:layout_margin="5dp"
         android:weightSum="3"
@@ -30,7 +30,7 @@
             android:gravity="right">
 
             <TextView
-                android:id="@+id/profileNameTextId"
+                android:id="@+id/profileEmailTextId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/y"
@@ -118,19 +118,37 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:weightSum="3"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:weightSum="4"
         android:layout_margin="5dp"
         android:background="@drawable/background_w"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/internetId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/internet"
+                android:text="Check Internet Speed" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
 
@@ -138,87 +156,81 @@
                 android:id="@+id/staticId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_description_24"
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
                 android:text="Statics" />
             <Button
                 android:id="@+id/mapId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_map_24"
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
                 android:text="Map" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/vehicleId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_emoji_transportation_24"
-                android:text="Vehicle\ninfo" />
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
+               android:text="Vehicleinfo" />
             <Button
                 android:id="@+id/locationId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_add_location_24"
-                android:text="Save\nLocation"
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
+                android:text="Save Location"
                 />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/gasStationId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_local_gas_station_24"
-                android:text="Gas\nStation" />
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
+                android:text="Gas Station" />
             <Button
                 android:id="@+id/exitId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:textColor="@color/a"
-                android:background="@drawable/circle_button"
-                android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
-                android:text="Exit" />
+                android:textSize="24dp"
+                android:textColor="@color/d"
+                android:background="@drawable/logical"
+                 android:text="Exit" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

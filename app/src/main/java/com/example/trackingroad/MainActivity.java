@@ -1,8 +1,10 @@
 package com.example.trackingroad;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,22 +15,32 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    EditText userText,passwordText;
+    EditText userEmailText,passwordText;
     Button loginButton,clearButton,forgetButton,signUpButton;
 
-    DatabaseHelper databaseHelper;
+    private FirebaseAuth mAuth;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.setTitle("SignIn");
 
-        userText=(EditText)findViewById(R.id.userTextId);
+        userEmailText=(EditText)findViewById(R.id.userETextId);
         passwordText=(EditText)findViewById(R.id.passwordTextId);
 
         loginButton=(Button)findViewById(R.id.loginButtonId);
@@ -36,8 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         forgetButton=(Button)findViewById(R.id.forgetPasswordId);
         signUpButton=(Button)findViewById(R.id.signUpId);
 
-        databaseHelper=new DatabaseHelper(this);
-        SQLiteDatabase sqLiteDatabase= databaseHelper.getWritableDatabase();
+
+        mAuth = FirebaseAuth.getInstance();
+        progressBar=(ProgressBar)findViewById(R.id.progressBarX);
 
         loginButton.setOnClickListener(this);
         clearButton.setOnClickListener(this);
@@ -87,39 +100,129 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
-        String userName=userText.getText().toString();
-        String password=passwordText.getText().toString();
-
-        if(v.getId()==R.id.loginButtonId)
+        switch (v.getId())
         {
-            Boolean result =databaseHelper.findPassword(userName,password);
+            //Login
+            case R.id.loginButtonId:
 
-            if(result==true)
-            {
-                Intent login=new Intent(MainActivity.this,Login.class);
-                login.putExtra("userText",userName);
-                startActivity(login);
+                userLogin();
+                break;
+
+
+            //clear
+            case R.id.clearButtonId:
+
+                userEmailText.setText("");
+                passwordText.setText("");
+
+                break;
+
+
+
+            //forgetPassword
+            case R.id.forgetPasswordId:
+
+                final EditText resetMail=new EditText(v.getContext());
+                AlertDialog.Builder passwordResetDialog=new AlertDialog.Builder(v.getContext());
+
+                passwordResetDialog.setTitle("Reset Password");
+                passwordResetDialog.setMessage("Enter your email To Received Reset Link");
+                passwordResetDialog.setView(resetMail);
+
+                passwordResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        String mail=resetMail.getText().toString();
+                        mAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(getApplicationContext(),"Reset link sent to your email",Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(getApplicationContext(),"Error ! Reset link is not send"+e.getMessage(),Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                });
+
+                passwordResetDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                    }
+                });
+                passwordResetDialog.create().show();
+
+                break;
+
+
+
+
+            //signUp
+            case  R.id.signUpId:
+
+                Intent signUp=new Intent(MainActivity.this,CreateAccount.class);
+                startActivity(signUp);
+
+                break;
+
+        }
+    }
+
+    private void userLogin() {
+
+        String email=userEmailText.getText().toString().trim();
+        String password=passwordText.getText().toString().trim();
+
+        if(email.isEmpty())
+        {
+            userEmailText.setError("Enter an email address");
+            userEmailText.requestFocus();
+            return;
+        }
+
+        if(!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
+            userEmailText.setError("Enter a valid email address");
+            userEmailText.requestFocus();
+            return;
+        }
+
+
+        if(password.isEmpty())
+        {
+            passwordText.setError("Enter a password");
+            passwordText.requestFocus();
+            return;
+        }
+
+        if(password.length()<6)
+        {
+            passwordText.setError("Minimum length of a password should be 6");
+            passwordText.requestFocus();
+            return;
+        }
+        progressBar.setVisibility(View.VISIBLE);
+
+        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                progressBar.setVisibility(View.GONE);
+                if(task.isSuccessful())
+                {
+                    Intent login=new Intent(getApplicationContext(),Login.class);
+                    login.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(login);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(),"Login Unsuccessful",Toast.LENGTH_SHORT).show();
+                }
             }
-            else {
-                Toast.makeText(getApplicationContext(),"Username and Password didn't match",Toast.LENGTH_SHORT).show();
-            }
-
-        }
-        if(v.getId()==R.id.clearButtonId)
-        {
-            userText.setText("");
-            passwordText.setText("");
-        }
-        if(v.getId()==R.id.forgetPasswordId)
-        {
-            Intent forget=new Intent(MainActivity.this,ForgetPassword.class);
-            startActivity(forget);
-        }
-        if(v.getId()==R.id.signUpId)
-        {
-            Intent signUp=new Intent(MainActivity.this,CreateAccount.class);
-            startActivity(signUp);
-        }
+        });
     }
 }

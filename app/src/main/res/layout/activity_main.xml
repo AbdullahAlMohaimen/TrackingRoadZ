@@ -60,16 +60,16 @@
 
 
         <EditText
-            android:id="@+id/userTextId"
+            android:id="@+id/userETextId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="@color/a"
-            android:inputType="textPersonName"
-            android:hint="Enter your Username"
-            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
             />
 
         <EditText
@@ -83,6 +83,13 @@
             android:inputType="textPassword"
             android:drawableLeft="@drawable/ic_baseline_lock_24"
             android:hint="Enter your Password"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarX"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
     </LinearLayout>
 
     //button(login,cancel,forget Password

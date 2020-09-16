@@ -14,13 +14,15 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
-    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton;
+    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,internetSpeed;
     ImageButton profileSetting,logout,vehicleInformation;
 
-    DatabaseHelper databaseHelper;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +34,9 @@ public class Login extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        setProfileNameText=(TextView)findViewById(R.id.profileNameTextId);
+        setProfileNameText=(TextView)findViewById(R.id.profileEmailTextId);
 
+        internetSpeed=(Button)findViewById(R.id.internetId);
         staticButton=(Button)findViewById(R.id.staticId);
         mapButton=(Button)findViewById(R.id.mapId);
         vehicleButton=(Button)findViewById(R.id.vehicleId);
@@ -41,8 +44,7 @@ public class Login extends AppCompatActivity {
         gasStationButton=(Button)findViewById(R.id.gasStationId);
         exitButton=(Button)findViewById(R.id.exitId);
 
-        databaseHelper=new DatabaseHelper(this);
-        SQLiteDatabase sqLiteDatabase= databaseHelper.getWritableDatabase();
+        mAuth=FirebaseAuth.getInstance();
 
         vehicleInformation=(ImageButton)findViewById(R.id.vehicleInformationButton);
         profileSetting=(ImageButton)findViewById(R.id.profileSettingButton);
@@ -59,6 +61,9 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+
+
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,6 +71,9 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
+
+
 
         vehicleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +84,9 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+
+
         locationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,12 +94,20 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
+
+
+
         gasStationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
+
+
+
+
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +116,9 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+
+
         vehicleInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,6 +126,10 @@ public class Login extends AppCompatActivity {
                 startActivity(vehicleInfo);
             }
         });
+
+
+
+
         profileSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -112,19 +138,30 @@ public class Login extends AppCompatActivity {
                 startActivity(showSetting);
             }
         });
+
+
+
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                FirebaseAuth.getInstance().signOut();
+                finish();
                 Intent logout=new Intent(Login.this,MainActivity.class);
                 startActivity(logout);
             }
         });
 
 
-        Intent setProfileName=getIntent();
-        setProfileNameText.setText(setProfileName.getStringExtra("userText"));
 
+
+        internetSpeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
