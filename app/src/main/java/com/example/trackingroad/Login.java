@@ -3,9 +3,12 @@ package com.example.trackingroad;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
-    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,internetSpeed;
+    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,internetConnection;
     ImageButton profileSetting,logout,vehicleInformation;
 
     FirebaseAuth mAuth;
@@ -30,19 +33,20 @@ public class Login extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        this.setTitle("Home");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         setProfileNameText=(TextView)findViewById(R.id.profileEmailTextId);
 
-        internetSpeed=(Button)findViewById(R.id.internetId);
         staticButton=(Button)findViewById(R.id.staticId);
         mapButton=(Button)findViewById(R.id.mapId);
         vehicleButton=(Button)findViewById(R.id.vehicleId);
         locationButton=(Button)findViewById(R.id.locationId);
         gasStationButton=(Button)findViewById(R.id.gasStationId);
         exitButton=(Button)findViewById(R.id.exitId);
+        internetConnection=(Button)findViewById(R.id.checkInternetId);
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -155,13 +159,14 @@ public class Login extends AppCompatActivity {
 
 
 
-
-        internetSpeed.setOnClickListener(new View.OnClickListener() {
+        internetConnection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                checkConnection();
             }
         });
+
     }
 
     @Override
@@ -173,4 +178,26 @@ public class Login extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    public void checkConnection()
+    {
+        ConnectivityManager manager=(ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork=manager.getActiveNetworkInfo();
+
+        if(null!=activeNetwork)
+        {
+            if(activeNetwork.getType()==ConnectivityManager.TYPE_WIFI)
+            {
+                Toast.makeText(getApplicationContext(),"Wifi Enable",Toast.LENGTH_SHORT).show();
+            }
+            else if(activeNetwork.getType()==ConnectivityManager.TYPE_MOBILE)
+            {
+                Toast.makeText(getApplicationContext(),"Network Enable",Toast.LENGTH_SHORT).show();
+            }
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(),"No Internet Connection",Toast.LENGTH_SHORT).show();
+        }
+    }
 }
