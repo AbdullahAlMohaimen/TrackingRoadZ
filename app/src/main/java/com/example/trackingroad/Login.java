@@ -72,7 +72,8 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                Intent currentLocation=new Intent(getApplicationContext(),CurrentLocation.class);
+                startActivity(currentLocation);
             }
         });
 

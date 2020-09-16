@@ -170,7 +170,7 @@
                 android:textSize="24dp"
                 android:textColor="@color/d"
                 android:background="@drawable/logical"
-                android:text="Map" />
+                android:text="Get Location" />
         </LinearLayout>
 
         <LinearLayout

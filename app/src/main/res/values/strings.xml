@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">TrackingRoad</string>
-    <string name="navigation_drawer_open">Open</string>
-    <string name="navigation_drawer_close">Close</string>
-    <string name="Internet_Speed_Meter">I_Speed_Meter</string>
-    <string name="banner_home_folder">ca_app_pub_3215692282672835/4913863608</string>
-    <string name="interstitial_full_screen">ca_app_pub_3215692282672835/8469965231</string>
 </resources>
