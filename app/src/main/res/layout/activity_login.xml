@@ -24,7 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:padding="4dp"
             android:gravity="right">
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:textColor="@color/a"
                 android:textStyle="bold"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -109,33 +109,50 @@
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="vertical">
                 
                 <Button
                     android:id="@+id/btnStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_button"
                     android:text="Start"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
 
-                <Button
-                    android:id="@+id/btnPause"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textAllCaps="false"
-                    android:text="Pause"/>
-                <Button
-                    android:id="@+id/btnStop"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textAllCaps="false"
-                    android:text="Stop"/>
+                    <Button
+                        android:id="@+id/btnPause"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="26dp"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/g"
+                        android:background="@drawable/button_z"
+                        android:text="Pause"/>
+                    <Button
+                        android:id="@+id/btnStop"
+                        android:layout_width="wrap_content"
+                        android:textSize="26dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/g"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_z"
+                        android:text="Stop"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
