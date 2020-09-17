@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
-    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,internetConnection;
+    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,internetConnection,distance;
     ImageButton profileSetting,logout,vehicleInformation;
 
     FirebaseAuth mAuth;
@@ -46,6 +46,7 @@ public class Login extends AppCompatActivity {
         locationButton=(Button)findViewById(R.id.locationId);
         gasStationButton=(Button)findViewById(R.id.gasStationId);
         exitButton=(Button)findViewById(R.id.exitId);
+        distance=(Button)findViewById(R.id.distanceId);
         internetConnection=(Button)findViewById(R.id.checkInternetId);
 
         mAuth=FirebaseAuth.getInstance();
@@ -64,8 +65,6 @@ public class Login extends AppCompatActivity {
 
             }
         });
-
-
 
 
         mapButton.setOnClickListener(new View.OnClickListener() {
@@ -165,6 +164,18 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
 
                 checkConnection();
+
+            }
+        });
+
+
+        distance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent dist=new Intent(getApplicationContext(),DistanceTwoPlace.class);
+                startActivity(dist);
+
             }
         });
 
