@@ -20,7 +20,7 @@
         android:bottom="0dp"
         />
     <size
-        android:width="180dp"
+        android:width="200dp"
         android:height="55dp"
         />
     <stroke

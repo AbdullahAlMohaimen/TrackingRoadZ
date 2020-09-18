@@ -276,7 +276,7 @@
                 android:background="@drawable/logical"
                 android:text="Gas Station" />
             <Button
-                android:id="@+id/exitId"
+                android:id="@+id/trackId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -284,7 +284,7 @@
                 android:textSize="24dp"
                 android:textColor="@color/d"
                 android:background="@drawable/logical"
-                 android:text="Exit" />
+                 android:text="Track On" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

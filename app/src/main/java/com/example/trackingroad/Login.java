@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
     static TextView distance,time;
-    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,exitButton,
+    Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
             internetConnection,distanceTwoPlace,btnStart,btnStop,btnPause;
     ImageButton profileSetting,logout,vehicleInformation;
 
@@ -157,7 +157,7 @@ public class Login extends AppCompatActivity {
         vehicleButton=(Button)findViewById(R.id.vehicleId);
         locationButton=(Button)findViewById(R.id.locationId);
         gasStationButton=(Button)findViewById(R.id.gasStationId);
-        exitButton=(Button)findViewById(R.id.exitId);
+        trackButton=(Button)findViewById(R.id.trackId);
         distanceTwoPlace=(Button)findViewById(R.id.distanceTwoPlaceId);
         internetConnection=(Button)findViewById(R.id.checkInternetId);
 
@@ -221,11 +221,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        exitButton.setOnClickListener(new View.OnClickListener() {
+        //
+        trackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                finish();
+                Intent track=new Intent(getApplicationContext(),TrackOn.class);
+                startActivity(track);
             }
         });
 
