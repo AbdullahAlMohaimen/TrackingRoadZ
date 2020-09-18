@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -27,7 +28,7 @@ import java.util.Locale;
 
 public class CurrentLocation extends AppCompatActivity {
 
-    Button btLocation;
+    Button btLocation,saveLocation;
     TextView textView1, textView2, textView3, textView4, textView5;
 
     FusedLocationProviderClient fusedLocationProviderClient;
@@ -43,6 +44,7 @@ public class CurrentLocation extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
+        saveLocation=(Button)findViewById(R.id.saveLocation);
         btLocation = (Button) findViewById(R.id.bt_location);
         textView1 = (TextView) findViewById(R.id.text_view1);
         textView2 = (TextView) findViewById(R.id.text_view2);
@@ -65,6 +67,16 @@ public class CurrentLocation extends AppCompatActivity {
                 }
             }
         });
+
+
+        saveLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+
     }
 
     private void getLocation() {

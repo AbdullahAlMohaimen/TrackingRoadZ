@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -20,6 +21,7 @@ import android.location.LocationManager;
 import android.media.audiofx.BassBoost;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -214,13 +216,6 @@ public class Login extends AppCompatActivity {
 
 
 
-        gasStationButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
         //
         trackButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -354,6 +349,16 @@ public class Login extends AppCompatActivity {
                 btnPause.setText("Pause");
                 btnPause.setVisibility(View.GONE);
                 btnStop.setVisibility(View.GONE);
+            }
+        });
+
+
+        gasStationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent nearBy=new Intent(getApplicationContext(),NearBY.class);
+                startActivity(nearBy);
             }
         });
     }
