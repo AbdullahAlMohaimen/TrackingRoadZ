@@ -7,16 +7,20 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.ArrayList;
 
 public class SaveLocation extends AppCompatActivity {
 
-    ListView listView;
+    TextView countryView,latencyView,addressView;
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
     String userId;
@@ -29,11 +33,23 @@ public class SaveLocation extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        listView=(ListView)findViewById(R.id.locationListViewId);
+        countryView=(TextView)findViewById(R.id.countryViewId);
+        latencyView=(TextView)findViewById(R.id.latencyViewId);
+        addressView=(TextView)findViewById(R.id.addressViewId);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
         userId=mAuth.getCurrentUser().getUid();
+        DocumentReference documentReference=fStore.collection("Save Location").document(userId);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+
+                countryView.setText(documentSnapshot.getString("Country"));
+                latencyView.setText(documentSnapshot.getString("Locality"));
+                addressView.setText(documentSnapshot.getString("Address"));
+            }
+        });
 
     }
 

@@ -9,15 +9,37 @@
     android:padding="10dp"
     tools:context=".SaveLocation">
 
-    <ListView
-        android:divider="@color/s"
-        android:listSelector="@color/d"
-        android:dividerHeight="4dp"
-        android:id="@+id/locationListViewId"
+    <TextView
+        android:id="@+id/countryViewId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp">
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Country"/>
 
-    </ListView>
+    <TextView
+        android:id="@+id/latencyViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Latency"/>
+
+    <TextView
+        android:id="@+id/addressViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Address"/>
 
 </LinearLayout>

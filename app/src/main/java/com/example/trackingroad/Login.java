@@ -406,7 +406,7 @@ public class Login extends AppCompatActivity {
         DocumentReference documentReference=fStore.collection("SpeedAndTime").document(Id);
 
         Map<String,Object> distanceTime=new HashMap<>();
-        distanceTime.put("Speed",distanceT);
+        distanceTime.put("Distance",distanceT);
         distanceTime.put("Time",timeT);
         distanceTime.put("Speed",speedT);
 

@@ -6,7 +6,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/second"
-    android:padding="5dp"
+    android:padding="10dp"
     tools:context=".Static">
 
+
+    <TextView
+        android:id="@+id/speedViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Speed"/>
+    <TextView
+        android:id="@+id/distanceViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Distance"/>
+    <TextView
+        android:id="@+id/timeViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profilebackground"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/a"
+        android:text="Time"/>
 </LinearLayout>
