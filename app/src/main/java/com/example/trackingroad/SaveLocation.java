@@ -5,25 +5,36 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Static extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class SaveLocation extends AppCompatActivity {
+
+    ListView listView;
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
-
     String userId;
-    String Id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_static);
+        setContentView(R.layout.activity_save_location);
 
         //addingBackButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
+
+        listView=(ListView)findViewById(R.id.locationListViewId);
+
+        mAuth=FirebaseAuth.getInstance();
+        fStore=FirebaseFirestore.getInstance();
+        userId=mAuth.getCurrentUser().getUid();
+
     }
 
     @Override

@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
 
-    static TextView distance,time;
+    static TextView distance,time,speed;
     Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
             internetConnection,distanceTwoPlace,btnStart,btnStop,btnPause;
 
@@ -119,6 +119,18 @@ public class Login extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+    }
+
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode)
         {
@@ -160,6 +172,7 @@ public class Login extends AppCompatActivity {
 
         distance=(TextView)findViewById(R.id.distance);
         time=(TextView)findViewById(R.id.time);
+        speed=(TextView)findViewById(R.id.speedtext);
         btnStart=(Button)findViewById(R.id.btnStart);
         btnPause=(Button)findViewById(R.id.btnPause);
         btnStop=(Button)findViewById(R.id.btnStop);
@@ -229,6 +242,8 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent saveLocation=new Intent(getApplicationContext(),SaveLocation.class);
+                startActivity(saveLocation);
 
             }
         });
@@ -333,8 +348,7 @@ public class Login extends AppCompatActivity {
                 btnPause.setText("Pause");
                 btnPause.setVisibility(View.GONE);
                 btnStop.setVisibility(View.GONE);
-
-
+                p=0;
             }
         });
 
@@ -365,6 +379,14 @@ public class Login extends AppCompatActivity {
 
         final String distanceT=distance.getText().toString().trim();
         final String timeT=time.getText().toString().trim();
+        final String speedT=speed.getText().toString().trim();
+
+        if(speedT.isEmpty())
+        {
+            speed.setError("Find Your Location First");
+            speed.requestFocus();
+            return;
+        }
 
         if(distanceT.isEmpty())
         {
@@ -381,11 +403,13 @@ public class Login extends AppCompatActivity {
         }
 
         Id=mAuth.getCurrentUser().getUid();
-        DocumentReference documentReference=fStore.collection("Speed & Time").document(Id);
+        DocumentReference documentReference=fStore.collection("SpeedAndTime").document(Id);
 
         Map<String,Object> distanceTime=new HashMap<>();
         distanceTime.put("Speed",distanceT);
         distanceTime.put("Time",timeT);
+        distanceTime.put("Speed",speedT);
+
 
         documentReference.set(distanceTime).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

@@ -23,12 +23,13 @@ public class LocationService extends Service implements GoogleApiClient.Connecti
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private static final long INTERVAL=1000*2;
-    private static final long FASTEST_INTERVAL=1000;
+    private static final long FASTEST_INTERVAL=1000*1;
     LocationRequest mLocationRequest;
     GoogleApiClient mGoogleApiClient;
     Location mCurrentLocation,lStart,lEnd;
 
     static double distance=0;
+    double speed;
 
     private final IBinder mBinder=new LocalBinder();
 
@@ -54,6 +55,12 @@ public class LocationService extends Service implements GoogleApiClient.Connecti
         mLocationRequest.setInterval(INTERVAL);
         mLocationRequest.setFastestInterval(FASTEST_INTERVAL);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+        return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
@@ -89,6 +96,7 @@ public class LocationService extends Service implements GoogleApiClient.Connecti
         if(lStart==null)
         {
             lStart=lEnd=mCurrentLocation;
+            lEnd = mCurrentLocation;
 
         }
         else {
@@ -96,6 +104,7 @@ public class LocationService extends Service implements GoogleApiClient.Connecti
         }
         //updateInformation
         updateUI();
+        speed = location.getSpeed() * 18 / 5;
     }
 
 
@@ -109,6 +118,11 @@ public class LocationService extends Service implements GoogleApiClient.Connecti
             diff = TimeUnit.MILLISECONDS.toMinutes(diff);
 
             Login.time.setText("Total time: "+diff+"minutes");
+            if (speed > 0.0)
+                Login.speed.setText("Current speed: " + new DecimalFormat("#.##").format(speed) + " km/hr");
+            else
+                Login.speed.setText(".......");
+
             Login.distance.setText(new DecimalFormat("#.###").format(distance)+"Km's");
 
             lStart=lEnd;
