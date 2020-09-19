@@ -26,6 +26,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -33,15 +36,25 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Login extends AppCompatActivity {
 
     TextView setProfileNameText;
+
     static TextView distance,time;
     Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
             internetConnection,distanceTwoPlace,btnStart,btnStop,btnPause;
-    ImageButton profileSetting,logout,vehicleInformation;
 
     static boolean status;
     LocationManager locationManager;
@@ -51,6 +64,10 @@ public class Login extends AppCompatActivity {
 
     LocationService myService;
     FirebaseAuth mAuth;
+    FirebaseFirestore fStore;
+
+    String userId;
+    String Id;
 
     private ServiceConnection sc=new ServiceConnection() {
         @Override
@@ -125,7 +142,6 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         this.setTitle("Home");
@@ -149,9 +165,6 @@ public class Login extends AppCompatActivity {
         btnStop=(Button)findViewById(R.id.btnStop);
 
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-
         setProfileNameText=(TextView)findViewById(R.id.profileEmailTextId);
 
         staticButton=(Button)findViewById(R.id.staticId);
@@ -164,10 +177,17 @@ public class Login extends AppCompatActivity {
         internetConnection=(Button)findViewById(R.id.checkInternetId);
 
         mAuth=FirebaseAuth.getInstance();
+        fStore=FirebaseFirestore.getInstance();
 
-        vehicleInformation=(ImageButton)findViewById(R.id.vehicleInformationButton);
-        profileSetting=(ImageButton)findViewById(R.id.profileSettingButton);
-        logout=(ImageButton)findViewById(R.id.logoutButton);
+        userId=mAuth.getCurrentUser().getUid();
+
+        DocumentReference documentReference=fStore.collection("users").document(userId);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+                setProfileNameText.setText(documentSnapshot.getString("fName"));
+            }
+        });
 
 
         staticButton.setOnClickListener(new View.OnClickListener() {
@@ -223,43 +243,6 @@ public class Login extends AppCompatActivity {
 
                 Intent track=new Intent(getApplicationContext(),TrackOn.class);
                 startActivity(track);
-            }
-        });
-
-
-
-
-        vehicleInformation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent vehicleInfo=new Intent(Login.this,VehicleInformation.class);
-                startActivity(vehicleInfo);
-            }
-        });
-
-
-
-
-        profileSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent showSetting=new Intent(Login.this,profileSetting.class);
-                startActivity(showSetting);
-            }
-        });
-
-
-
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FirebaseAuth.getInstance().signOut();
-                finish();
-                Intent logout=new Intent(Login.this,MainActivity.class);
-                startActivity(logout);
             }
         });
 
@@ -344,11 +327,14 @@ public class Login extends AppCompatActivity {
                 if(status==true)
                 {
                     unbindService();
+                    setDistanceAndTime();
                 }
                 btnStart.setVisibility(View.VISIBLE);
                 btnPause.setText("Pause");
                 btnPause.setVisibility(View.GONE);
                 btnStop.setVisibility(View.GONE);
+
+
             }
         });
 
@@ -361,6 +347,92 @@ public class Login extends AppCompatActivity {
                 startActivity(nearBy);
             }
         });
+
+
+        setProfileNameText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent profile=new Intent(getApplicationContext(),Profile.class);
+                startActivity(profile);
+            }
+        });
+    }
+
+
+    //
+    private void setDistanceAndTime() {
+
+        final String distanceT=distance.getText().toString().trim();
+        final String timeT=time.getText().toString().trim();
+
+        if(distanceT.isEmpty())
+        {
+            distance.setError("Find Your Location First");
+            distance.requestFocus();
+            return;
+        }
+
+        if(timeT.isEmpty())
+        {
+            time.setError("Find Your Location First");
+            time.requestFocus();
+            return;
+        }
+
+        Id=mAuth.getCurrentUser().getUid();
+        DocumentReference documentReference=fStore.collection("Speed & Time").document(Id);
+
+        Map<String,Object> distanceTime=new HashMap<>();
+        distanceTime.put("Speed",distanceT);
+        distanceTime.put("Time",timeT);
+
+        documentReference.set(distanceTime).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(getApplicationContext(),"Successfully Saved",Toast.LENGTH_SHORT).show();
+                Log.d("Success","onSuccess: Location Save"+Id);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getApplicationContext(),"Failed",Toast.LENGTH_SHORT).show();
+                Log.d("Failure","onFailure: "+e.toString());
+            }
+        });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.home_layout,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId()==R.id.vehicleInfoId)
+        {
+            Intent vehicleInfo=new Intent(Login.this,VehicleInformation.class);
+            startActivity(vehicleInfo);
+        }
+
+        if(item.getItemId()==R.id.settingId)
+        {
+            Intent showSetting=new Intent(Login.this,profileSetting.class);
+            startActivity(showSetting);
+        }
+
+        if(item.getItemId()==R.id.logoutId)
+        {
+            FirebaseAuth.getInstance().signOut();
+            finish();
+            Intent logout=new Intent(Login.this,MainActivity.class);
+            startActivity(logout);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void checkGPS() {
@@ -409,15 +481,6 @@ public class Login extends AppCompatActivity {
 
     }
 
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId()==android.R.id.home)
-        {
-            this.finish();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 
     public void checkConnection()

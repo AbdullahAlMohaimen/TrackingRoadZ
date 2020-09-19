@@ -1,11 +1,13 @@
 package com.example.trackingroad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +21,10 @@ public class TrackOn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_on);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         etSource=(EditText)findViewById(R.id.et_sourceT);
@@ -66,5 +72,14 @@ public class TrackOn extends AppCompatActivity {
             mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(mapS);
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

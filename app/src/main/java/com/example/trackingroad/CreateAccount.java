@@ -102,14 +102,12 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
             case R.id.newSignUptId:
 
                 userRegister();
-
                 break;
         }
 
     }
 
     private void userRegister() {
-
 
         final String name=fullName.getText().toString();
         final String email=emailText.getText().toString().trim();

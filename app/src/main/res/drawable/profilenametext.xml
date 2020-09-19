@@ -20,11 +20,11 @@
         android:bottom="0dp"
         />
     <size
-        android:width="230dp"
+        android:width="350dp"
         android:height="40dp"
         />
     <stroke
         android:width="5dp"
-        android:color="@color/f"
+        android:color="@color/g"
         />
 </shape>

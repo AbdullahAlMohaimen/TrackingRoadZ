@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NearBY"></activity>
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".NearBY" />
         <activity android:name=".TrackOn" />
         <activity android:name=".DistanceTwoPlace" />
         <activity android:name=".CurrentLocation" />

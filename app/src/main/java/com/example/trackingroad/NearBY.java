@@ -1,11 +1,13 @@
 package com.example.trackingroad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -28,6 +30,10 @@ public class NearBY extends AppCompatActivity {
         shoppingMall=(Button)findViewById(R.id.malButtonId);
         busStation=(Button)findViewById(R.id.busStationButtonId);
         policeStation=(Button)findViewById(R.id.policeStationButtonId);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         fuelStation.setOnClickListener(new View.OnClickListener() {
@@ -286,9 +292,16 @@ public class NearBY extends AppCompatActivity {
                     startActivity(mapS);
                 }
 
-
-
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
