@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25dp"
+        android:gravity="center"
         android:background="@drawable/background_button"
         android:textColor="@color/d"
         android:hint="Enter Source Location" />
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25dp"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/background_button"
         android:textColor="@color/d"
