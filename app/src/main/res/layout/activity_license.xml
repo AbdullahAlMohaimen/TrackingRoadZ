@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/first"
-    android:padding="5dp"
     android:orientation="vertical"
-    tools:context=".VehicleInformation">
-
+    android:background="@drawable/second"
+    android:padding="5dp"
+    tools:context=".License">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/a"
         android:textStyle="bold"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Set Your Vehicle Information" />
+        android:text="Motor Driving\nLicense" />
 
     <EditText
-        android:id="@+id/ownerNameId"
+        android:id="@+id/nameLicense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="26dp"
@@ -31,89 +30,106 @@
         android:textColor="@color/a"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Owner Name" />
+        android:hint="Name"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/dateOfBirthLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Date of Birth"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/bloodGroupLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Blood Group"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/fatherLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:hint="Father/Husband"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/validityLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Validity"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/licenseNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="License No"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/authorityLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Issuing Authority"
+        android:background="@drawable/licensebackground"
+        />
+    <EditText
+        android:id="@+id/addressLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/a"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Address"
+        android:background="@drawable/licensebackground"
+        />
 
     <EditText
-        android:id="@+id/vehicleTypeId"
+        android:id="@+id/issueLicense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Types of Vehicle" />
-
-    <EditText
-        android:id="@+id/modelNameId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Maker / Model" />
-
-    <EditText
-        android:id="@+id/registrationId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Registration No" />
-
-    <EditText
-        android:id="@+id/registrationDateId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_marginTop="3dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:background="@drawable/profilebackground"
-        android:hint="Registration Date" />
-    <EditText
-        android:id="@+id/chassisNoId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Chassis No" />
-    <EditText
-        android:id="@+id/engineId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Engine No" />
-    <EditText
-        android:id="@+id/fuelTypeId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/a"
-        android:gravity="center"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/profilebackground"
-        android:hint="Fuel Type" />
+        android:layout_marginTop="5dp"
+        android:hint="First Issue"
+        android:background="@drawable/licensebackground"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -123,7 +139,7 @@
         android:padding="10dp">
 
         <Button
-            android:id="@+id/clearId"
+            android:id="@+id/clearLicense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/a"
@@ -136,7 +152,7 @@
             />
 
         <Button
-            android:id="@+id/saveId"
+            android:id="@+id/saveLicense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/a"

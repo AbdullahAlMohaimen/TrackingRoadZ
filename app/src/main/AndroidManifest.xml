@@ -14,12 +14,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/speed"
         android:label="SpeedometerX"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SaveLocation"></activity>
+        <activity android:name=".LicenseInformation"></activity>
+        <activity android:name=".License" />
+        <activity android:name=".SaveLocation" />
         <activity android:name=".Profile" />
         <activity android:name=".NearBY" />
         <activity android:name=".TrackOn" />

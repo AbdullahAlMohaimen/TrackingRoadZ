@@ -17,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Profile extends AppCompatActivity {
 
-    TextView fullName,email,phone;
+    TextView fullName,email,phone,age,location;
 
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
@@ -35,6 +35,8 @@ public class Profile extends AppCompatActivity {
         fullName=(TextView)findViewById(R.id.profileName);
         email=(TextView)findViewById(R.id.profileEmail);
         phone=(TextView)findViewById(R.id.phoneNumber);
+        age=(TextView)findViewById(R.id.ageNumber);
+        location=(TextView)findViewById(R.id.locationNumber);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
@@ -49,6 +51,9 @@ public class Profile extends AppCompatActivity {
                 fullName.setText(documentSnapshot.getString("fName"));
                 email.setText(documentSnapshot.getString("email"));
                 phone.setText(documentSnapshot.getString("phone"));
+                age.setText(documentSnapshot.getString("Age"));
+                location.setText(documentSnapshot.getString("Location"));
+
             }
         });
 

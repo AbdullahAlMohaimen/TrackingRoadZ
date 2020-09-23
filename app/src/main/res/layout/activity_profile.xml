@@ -61,6 +61,19 @@
             android:layout_marginTop="20dp"/>
 
         <TextView
+            android:id="@+id/ageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="@color/a"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/profilebackground"
+            android:hint="Age"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
             android:id="@+id/phoneNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,6 +84,18 @@
             android:gravity="center"
             android:background="@drawable/profilebackground"
             android:hint="Phone Number"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/locationNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="@color/a"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/profilebackground"
+            android:hint="Location"
             android:layout_marginTop="20dp"/>
     </LinearLayout>
 

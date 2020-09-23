@@ -35,6 +35,7 @@ public class VehicleInformation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle_information);
+        this.setTitle("Vehicle");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
@@ -92,56 +93,56 @@ public class VehicleInformation extends AppCompatActivity {
 
         if(owner.isEmpty())
         {
-            ownerName.setError("Find Your Location First");
+            ownerName.setError("Enter your name Please!");
             ownerName.requestFocus();
             return;
         }
 
         if(vehicle.isEmpty())
         {
-            vehicleType.setError("Find Your Location First");
+            vehicleType.setError("Enter your vehicle Type Please!");
             vehicleType.requestFocus();
             return;
         }
 
         if(model.isEmpty())
         {
-            modelT.setError("Find Your Location First");
+            modelT.setError("Enter your vehicle model Please!");
             modelT.requestFocus();
             return;
         }
 
         if(registration.isEmpty())
         {
-            registrationNo.setError("Find Your Location First");
+            registrationNo.setError("Enter your registration number please!");
             registrationNo.requestFocus();
             return;
         }
 
         if(registrationD.isEmpty())
         {
-            registrationDate.setError("Find Your Location First");
+            registrationDate.setError("Enter your registration date please!");
             registrationDate.requestFocus();
             return;
         }
 
         if(chassis.isEmpty())
         {
-            chassisNo.setError("Find Your Location First");
+            chassisNo.setError("Enter your vehicle chassis no please!");
             chassisNo.requestFocus();
             return;
         }
 
         if(engine.isEmpty())
         {
-            engineNo.setError("Find Your Location First");
+            engineNo.setError("Enter your vehicle engine no please!");
             engineNo.requestFocus();
             return;
         }
 
         if(fuel.isEmpty())
         {
-            fuelType.setError("Find Your Location First");
+            fuelType.setError("Enter your vehicle fuel type please!");
             fuelType.requestFocus();
             return;
         }

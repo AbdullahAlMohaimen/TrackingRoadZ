@@ -5,16 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_v"
-    android:weightSum="2"
+    android:weightSum="4"
     android:padding="10dp"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".CreateAccount">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Your Profile"
+        android:textColor="@color/a"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:weightSum="4"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:weightSum="6"
         android:padding="5dp"
         android:orientation="vertical">
 
@@ -26,8 +35,9 @@
             android:inputType="textPersonName"
             android:textColor="@color/h"
             android:textStyle="bold"
+            android:layout_marginTop="5dp"
             android:background="@drawable/textview"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:drawableLeft="@drawable/ic_baseline_person_outline_24"
             android:hint="FullName" />
 
@@ -39,10 +49,25 @@
             android:inputType="textEmailAddress"
             android:textColor="@color/h"
             android:textStyle="bold"
+            android:layout_marginTop="5dp"
             android:background="@drawable/textview"
             android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:hint="Enter your Email" />
+
+        <EditText
+            android:id="@+id/ageId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/h"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/ic_baseline_confirmation_number_24"
+            android:hint="Age" />
 
 
         <EditText
@@ -51,13 +76,27 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="number"
+            android:layout_marginTop="5dp"
             android:textColor="@color/h"
             android:textStyle="bold"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:background="@drawable/textview"
             android:drawableLeft="@drawable/ic_baseline_local_phone_24"
             android:hint="PhoneNumber" />
 
+        <EditText
+            android:id="@+id/locationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/h"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/ic_baseline_my_location_24"
+            android:hint="Your Permanent Address" />
 
         <EditText
             android:id="@+id/passwordId"
@@ -66,10 +105,10 @@
             android:layout_weight="1"
             android:background="@drawable/textview"
             android:inputType="textPassword"
-
+            android:layout_marginTop="5dp"
             android:textColor="@color/h"
             android:textStyle="bold"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:drawableLeft="@drawable/ic_baseline_lock_24"
             android:hint="Password" />
 
@@ -83,8 +122,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:weightSum="2"
         android:padding="10dp"
@@ -93,8 +132,8 @@
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:weightSum="2"
             android:gravity="center"
@@ -106,7 +145,6 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="Sign Up"
-                android:layout_margin="5dp"
                 android:background="@drawable/button_y"
                 android:textColor="@color/a"
                 android:textStyle="bold"
@@ -119,20 +157,12 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="Clear"
-                android:layout_margin="5dp"
                 android:background="@drawable/button_y"
                 android:textColor="@color/a"
                 android:textStyle="bold"
                 android:textSize="28dp"/>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView6"
@@ -155,8 +185,6 @@
                 android:textSize="28dp"
                 android:layout_margin="20dp"
                 android:text="Sign In" />
-
-        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

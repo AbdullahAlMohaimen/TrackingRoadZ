@@ -54,7 +54,8 @@ public class Login extends AppCompatActivity {
 
     static TextView distance,time,speed;
     Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
-            internetConnection,distanceTwoPlace,btnStart,btnStop,btnPause;
+            internetConnection,btnStart,btnStop,btnPause;
+    ImageButton distanceTwoPlace,bus,truck,bike,cycle,drivingLicense,policeStation;
 
     static boolean status;
     LocationManager locationManager;
@@ -186,8 +187,15 @@ public class Login extends AppCompatActivity {
         locationButton=(Button)findViewById(R.id.locationId);
         gasStationButton=(Button)findViewById(R.id.gasStationId);
         trackButton=(Button)findViewById(R.id.trackId);
-        distanceTwoPlace=(Button)findViewById(R.id.distanceTwoPlaceId);
         internetConnection=(Button)findViewById(R.id.checkInternetId);
+
+        distanceTwoPlace=(ImageButton) findViewById(R.id.distanceTwoPlace);
+        bus=(ImageButton) findViewById(R.id.busId);
+        cycle=(ImageButton) findViewById(R.id.cycleId);
+        bike=(ImageButton) findViewById(R.id.bikeId);
+        truck=(ImageButton) findViewById(R.id.truckId);
+        policeStation=(ImageButton) findViewById(R.id.policeStationId);
+        drivingLicense=(ImageButton) findViewById(R.id.drivingLicenseId);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
@@ -371,6 +379,14 @@ public class Login extends AppCompatActivity {
                 startActivity(profile);
             }
         });
+
+        drivingLicense.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent licenseInfo=new Intent(getApplicationContext(),LicenseInformation.class);
+                startActivity(licenseInfo);
+            }
+        });
     }
 
 
@@ -441,6 +457,12 @@ public class Login extends AppCompatActivity {
         {
             Intent vehicleInfo=new Intent(Login.this,VehicleInformation.class);
             startActivity(vehicleInfo);
+        }
+
+        if(item.getItemId()==R.id.licenseId)
+        {
+            Intent license=new Intent(Login.this,License.class);
+            startActivity(license);
         }
 
         if(item.getItemId()==R.id.settingId)

@@ -160,27 +160,67 @@
                 android:textColor="@color/a"
                 android:textStyle="bold"
                 android:background="@drawable/internet"
-                android:text="Check Internet Connection" />
+                android:text="Check Connection" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:gravity="center">
 
-
-            <Button
-                android:id="@+id/distanceTwoPlaceId"
+            <ImageButton
+                android:id="@+id/truckId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:textAllCaps="false"
-                android:textSize="24dp"
-                android:textColor="@color/a"
-                android:textStyle="bold"
-                android:background="@drawable/internet"
-                android:text="Distance two places" />
+                android:layout_margin="8dp"
+                android:background="@drawable/truck"/>
+
+            <ImageButton
+                android:id="@+id/cycleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/cycle"/>
+
+            <ImageButton
+                android:id="@+id/busId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/bus"/>
+
+
+            <ImageButton
+                android:id="@+id/distanceTwoPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/distanced"/>
+
+            <ImageButton
+                android:id="@+id/bikeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/bike"/>
+
+            <ImageButton
+                android:id="@+id/policeStationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/policestation"/>
+
+            <ImageButton
+                android:id="@+id/drivingLicenseId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/licenseb"/>
+
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -194,11 +234,11 @@
                 android:id="@+id/staticId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/statica"
                 android:background="@drawable/logical"
                 android:text="Statics" />
             <Button
@@ -207,9 +247,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/getlocationy"
                 android:background="@drawable/logical"
                 android:text="Get Location" />
         </LinearLayout>
@@ -225,11 +266,11 @@
                 android:id="@+id/vehicleId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/vehicley"
                 android:background="@drawable/logical"
                android:text="Vehicleinfo" />
             <Button
@@ -238,9 +279,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/savelocationx"
                 android:background="@drawable/logical"
                 android:text="Save Location"
                 />
@@ -257,11 +299,11 @@
                 android:id="@+id/gasStationId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/nearbyplacex"
                 android:background="@drawable/logical"
                 android:text="Nearby Place" />
             <Button
@@ -270,9 +312,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:textColor="@color/a"
                 android:textStyle="bold"
+                android:drawableTop="@drawable/destinationy"
                 android:background="@drawable/logical"
                  android:text="Track On" />
         </LinearLayout>

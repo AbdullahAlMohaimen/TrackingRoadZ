@@ -1,11 +1,13 @@
 package com.example.trackingroad;
 
 //import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 //import android.content.Intent;
 import android.os.Bundle;
 //import android.view.View;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 //import android.widget.Toast;
@@ -39,6 +41,8 @@ public class DistanceTwoPlace extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_distance_two_place);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         etSource=(EditText)findViewById(R.id.et_source);
         etDestination=(EditText)findViewById(R.id.et_destination);
@@ -194,4 +198,13 @@ public class DistanceTwoPlace extends AppCompatActivity {
 
        // return (lat1*Math.PI/180.0);
    // }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

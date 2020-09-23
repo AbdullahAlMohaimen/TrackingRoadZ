@@ -189,19 +189,19 @@ public class CurrentLocation extends AppCompatActivity {
                         List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
                         //set Latitude
-                        textView1.setText(Html.fromHtml("<font color='#6200EE'><b>Latitude :</b><br></font>" + addresses.get(0).getLatitude()));
+                        textView1.setText(Html.fromHtml("<font color='#270000'><b>Latitude :</b><br></font>" + addresses.get(0).getLatitude()));
 
                         //set Longitude
-                        textView2.setText(Html.fromHtml("<font color='#6200EE'><b>Longitude :</b><br></font>" + addresses.get(0).getLongitude()));
+                        textView2.setText(Html.fromHtml("<font color='#0A0A47'><b>Longitude :</b><br></font>" + addresses.get(0).getLongitude()));
 
                         //set Country Name
-                        textView3.setText(Html.fromHtml("<font color='#6200EE'><b>Country Name :</b><br></font>" + addresses.get(0).getCountryName()));
+                        textView3.setText(Html.fromHtml("<font color='#007E71'><b>Country Name :</b><br></font>" + addresses.get(0).getCountryName()));
 
                         //set Locality
-                        textView4.setText(Html.fromHtml("<font color='#6200EE'><b>Locality :</b><br></font>" + addresses.get(0).getLocality()));
+                        textView4.setText(Html.fromHtml("<font color='#006C02'><b>Locality :</b><br></font>" + addresses.get(0).getLocality()));
 
                         //get Address
-                        textView5.setText(Html.fromHtml("<font color='#6200EE'><b>Address :</b><br></font>" + addresses.get(0).getAddressLine(0)));
+                        textView5.setText(Html.fromHtml("<font color='#9326CD'><b>Address :</b><br></font>" + addresses.get(0).getAddressLine(0)));
                     } catch (IOException e) {
 
                         e.printStackTrace();

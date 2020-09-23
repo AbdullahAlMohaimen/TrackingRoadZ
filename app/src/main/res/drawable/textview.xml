@@ -10,8 +10,8 @@
         android:angle="45"
         android:centerX="40%"
         android:centerColor="@color/l"
-        android:startColor="@color/b"
-        android:endColor="@color/b"
+        android:startColor="@color/c"
+        android:endColor="@color/k"
         android:type="linear"
         />
     <padding
@@ -22,7 +22,7 @@
         />
     <size
         android:width="350dp"
-        android:height="40dp"
+        android:height="30dp"
         />
     <stroke
         android:width="5dp"

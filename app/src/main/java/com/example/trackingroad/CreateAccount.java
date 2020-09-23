@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class CreateAccount extends AppCompatActivity implements View.OnClickListener{
 
-    EditText emailText,signPasswordText,fullName,phoneNumber;
+    EditText emailText,signPasswordText,fullName,phoneNumber,ageN,locationN;
     Button signUp,clear,signIn;
 
     FirebaseAuth mAuth;
@@ -56,6 +56,8 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
         emailText=(EditText)findViewById(R.id.emailTextId);
         phoneNumber=(EditText)findViewById(R.id.phoneNumberId);
         signPasswordText=(EditText)findViewById(R.id.passwordId);
+        ageN=(EditText)findViewById(R.id.ageId);
+        locationN=(EditText)findViewById(R.id.locationId);
 
         signUp=(Button)findViewById(R.id.newSignUptId);
         clear=(Button)findViewById(R.id.signUpClearId);
@@ -95,6 +97,8 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
                 phoneNumber.setText("");
                 emailText.setText("");
                 signPasswordText.setText("");
+                ageN.setText("");
+                locationN.setText("");
 
                 break;
 
@@ -112,6 +116,8 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
         final String name=fullName.getText().toString();
         final String email=emailText.getText().toString().trim();
         final String phone=phoneNumber.getText().toString();
+        final String age=ageN.getText().toString();
+        final String location=locationN.getText().toString();
         final String password=signPasswordText.getText().toString().trim();
 
         if(email.isEmpty())
@@ -158,7 +164,9 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
                     Map<String,Object>user=new HashMap<>();
                     user.put("fName",name);
                     user.put("email",email);
+                    user.put("Age",age);
                     user.put("phone",phone);
+                    user.put("Location",location);
 
                     documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -173,8 +181,6 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
                         }
                     });
 
-                    Intent login=new Intent(getApplicationContext(),Login.class);
-                    startActivity(login);
 
                 } else {
                     // If sign in fails, display a message to the user.
