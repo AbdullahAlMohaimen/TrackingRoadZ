@@ -19,6 +19,7 @@ public class Profile extends AppCompatActivity {
 
     TextView fullName,email,phone,age,location;
 
+    ImageView profilePicture;
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
     String userId;
@@ -37,6 +38,8 @@ public class Profile extends AppCompatActivity {
         phone=(TextView)findViewById(R.id.phoneNumber);
         age=(TextView)findViewById(R.id.ageNumber);
         location=(TextView)findViewById(R.id.locationNumber);
+
+        profilePicture=(ImageView)findViewById(R.id.profilePicture);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();

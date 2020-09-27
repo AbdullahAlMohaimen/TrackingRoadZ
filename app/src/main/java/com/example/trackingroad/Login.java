@@ -257,8 +257,6 @@ public class Login extends AppCompatActivity {
         });
 
 
-
-
         //
         trackButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -268,7 +266,6 @@ public class Login extends AppCompatActivity {
                 startActivity(track);
             }
         });
-
 
 
         internetConnection.setOnClickListener(new View.OnClickListener() {
@@ -385,6 +382,46 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent licenseInfo=new Intent(getApplicationContext(),LicenseInformation.class);
                 startActivity(licenseInfo);
+            }
+        });
+
+        bus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent busM=new Intent(getApplicationContext(),BusT.class);
+                startActivity(busM);
+            }
+        });
+
+        cycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cycleM=new Intent(getApplicationContext(),Cycle.class);
+                startActivity(cycleM);
+            }
+        });
+
+        bike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent bikeM=new Intent(getApplicationContext(),Bike.class);
+                startActivity(bikeM);
+            }
+        });
+
+        truck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent truckM=new Intent(getApplicationContext(),Truck.class);
+                startActivity(truckM);
+            }
+        });
+
+        policeStation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent policeM=new Intent(getApplicationContext(),PoliceStation.class);
+                startActivity(policeM);
             }
         });
     }

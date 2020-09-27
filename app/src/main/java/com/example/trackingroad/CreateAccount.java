@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -32,6 +33,7 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
     EditText emailText,signPasswordText,fullName,phoneNumber,ageN,locationN;
     Button signUp,clear,signIn;
 
+    ImageView profileImage;
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
 
@@ -58,6 +60,8 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
         signPasswordText=(EditText)findViewById(R.id.passwordId);
         ageN=(EditText)findViewById(R.id.ageId);
         locationN=(EditText)findViewById(R.id.locationId);
+
+        profileImage=(ImageView)findViewById(R.id.profilePic);
 
         signUp=(Button)findViewById(R.id.newSignUptId);
         clear=(Button)findViewById(R.id.signUpClearId);
@@ -106,6 +110,10 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
             case R.id.newSignUptId:
 
                 userRegister();
+                break;
+
+            case R.id.profilePic:
+
                 break;
         }
 

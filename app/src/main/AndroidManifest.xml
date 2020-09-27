@@ -19,7 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LicenseInformation"></activity>
+        <activity android:name=".PoliceStation"></activity>
+        <activity android:name=".Cycle" />
+        <activity android:name=".Bike" />
+        <activity android:name=".Truck" />
+        <activity android:name=".BusT" />
+        <activity android:name=".LicenseInformation" />
         <activity android:name=".License" />
         <activity android:name=".SaveLocation" />
         <activity android:name=".Profile" />

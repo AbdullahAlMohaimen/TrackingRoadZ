@@ -13,7 +13,8 @@ import android.widget.Button;
 
 public class NearBY extends AppCompatActivity {
 
-    Button fuelStation,hospital,school,college,university,gasStation,restaurant,shoppingMall,busStation,policeStation;
+    Button fuelStation,hospital,school,college,university,gasStation,restaurant,shoppingMall,busStation,policeStation
+            ,fillingStation,library,hotel,pharmacies,atm,park,mail,attraction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,14 @@ public class NearBY extends AppCompatActivity {
         shoppingMall=(Button)findViewById(R.id.malButtonId);
         busStation=(Button)findViewById(R.id.busStationButtonId);
         policeStation=(Button)findViewById(R.id.policeStationButtonId);
+        fillingStation=(Button)findViewById(R.id.fillingStationButtonId);
+        library=(Button)findViewById(R.id.libraryButtonId);
+        hotel=(Button)findViewById(R.id.hotelButtonId);
+        pharmacies=(Button)findViewById(R.id.pharmaciesButtonId);
+        atm=(Button)findViewById(R.id.atmButtonId);
+        park=(Button)findViewById(R.id.parkButtonId);
+        mail=(Button)findViewById(R.id.mailButtonId);
+        attraction=(Button)findViewById(R.id.attractionButtonId);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -243,8 +252,6 @@ public class NearBY extends AppCompatActivity {
             }
         });
 
-
-
         busStation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -269,8 +276,6 @@ public class NearBY extends AppCompatActivity {
             }
         });
 
-
-
         policeStation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -294,7 +299,204 @@ public class NearBY extends AppCompatActivity {
 
             }
         });
+
+        fillingStation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=filling station");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+        library.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=library");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+        hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=hotel");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+        park.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=park");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+
+
+        pharmacies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=pharmacies");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+
+            }
+        });
+
+
+        atm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=ATMs");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+
+        mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=Mail & Shipping");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+
+        attraction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try{
+                    //when google map is installed
+                    Uri uri=Uri.parse("geo:0,0?q=Attractions");
+
+                    Intent map=new Intent(Intent.ACTION_VIEW,uri);
+                    map.setPackage("com.google.android.apps.maps");
+                    map.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(map);
+                }catch (ActivityNotFoundException e)
+                {
+                    //when google map is not installed
+                    Uri uri=Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent mapS=new Intent(Intent.ACTION_VIEW,uri);
+                    mapS.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(mapS);
+                }
+            }
+        });
+
+
     }
+
+
+
+
+
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

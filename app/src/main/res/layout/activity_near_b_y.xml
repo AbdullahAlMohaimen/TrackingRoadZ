@@ -9,126 +9,242 @@
     android:padding="10dp"
     tools:context=".NearBY">
 
-    <Button
-        android:id="@+id/fuelButtonId"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:layout_margin="4dp"
-        android:textColor="@color/a"
-        android:text="Fuel Station" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/gasStationButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Gas Station"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/hospitalButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:layout_margin="4dp"
-        android:textColor="@color/a"
-        android:text="Hospital" />
+            <Button
+                android:id="@+id/fuelButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_margin="4dp"
+                android:textColor="@color/a"
+                android:text="Fuel Station" />
 
-    <Button
-        android:id="@+id/schoolButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="School"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/gasStationButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas Station"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
 
-    <Button
-        android:id="@+id/collegeButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="College"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/fillingStationButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filling Station"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
 
-    <Button
-        android:id="@+id/universityButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="University"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/policeStationButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Police Station"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
 
-    <Button
-        android:id="@+id/restaurantsButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Restaurant"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/hospitalButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_margin="4dp"
+                android:textColor="@color/a"
+                android:text="Hospital" />
 
-    <Button
-        android:id="@+id/malButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Shopping Mall"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/schoolButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
 
-    <Button
-        android:id="@+id/busStationButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bus Station"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"/>
+            <Button
+                android:id="@+id/collegeButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
 
-    <Button
-        android:id="@+id/policeStationButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Police Station"
-        android:layout_margin="4dp"
-        android:background="@drawable/background_button"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="@color/a"
-        />
+            <Button
+                android:id="@+id/universityButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
+
+            <Button
+                android:id="@+id/libraryButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Libraries"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/restaurantsButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
+
+            <Button
+                android:id="@+id/malButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shopping Mall"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
+
+            <Button
+                android:id="@+id/busStationButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus Station"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"/>
+
+            <Button
+                android:id="@+id/hotelButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/pharmaciesButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacies"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/atmButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATMs"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/parkButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parks"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/mailButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail and Shipping"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+            <Button
+                android:id="@+id/attractionButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attractions"
+                android:layout_margin="4dp"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/a"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
