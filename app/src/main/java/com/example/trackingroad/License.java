@@ -31,11 +31,12 @@ public class License extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_license);
-        this.setTitle("License");
+        //this.setTitle("License");
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         clearLicense=(Button)findViewById(R.id.clearLicense);
         saveLicense=(Button)findViewById(R.id.saveLicense);

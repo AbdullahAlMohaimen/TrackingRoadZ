@@ -26,6 +26,6 @@
         />
     <stroke
         android:width="5dp"
-        android:color="@color/g"
+        android:color="@color/s"
         />
 </shape>

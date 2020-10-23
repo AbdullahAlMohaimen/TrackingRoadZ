@@ -25,12 +25,13 @@ public class LicenseInformation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_license_information);
-        this.setTitle("Driving License");
+        //this.setTitle("Driving License");
 
         //addingBackButton
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         name=(TextView) findViewById(R.id.licenseName);

@@ -51,12 +51,13 @@ public class CurrentLocation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_current_location);
-        this.setTitle("Current Location");
+        //this.setTitle("Current Location");
 
         //addingBackButton
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         saveLocation=(Button)findViewById(R.id.saveLocation);

@@ -24,12 +24,13 @@ public class Vehicle extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_vehicle);
-        this.setTitle("Vehicle Information");
+        //this.setTitle("Vehicle Information");
 
         //addingBackButton
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         ownerNameText=(TextView)findViewById(R.id.ownerNameText);

@@ -9,6 +9,7 @@
     android:padding="5dp"
     tools:context=".Vehicle">
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -25,11 +26,11 @@
         android:id="@+id/ownerNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
         android:background="@drawable/profilebackground"
          />
 
@@ -37,11 +38,11 @@
         android:id="@+id/vehicleTypeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
         android:background="@drawable/profilebackground"
          />
 
@@ -49,11 +50,11 @@
         android:id="@+id/modelNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/profilebackground"
          />
 
@@ -61,11 +62,11 @@
         android:id="@+id/registrationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/profilebackground"
          />
 
@@ -73,8 +74,8 @@
         android:id="@+id/registrationDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
@@ -84,33 +85,33 @@
         android:id="@+id/chassisNoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/profilebackground"
          />
     <TextView
         android:id="@+id/engineText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/profilebackground"
         />
     <TextView
         android:id="@+id/fuelTypeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
         android:textStyle="bold"
         android:textColor="@color/a"
         android:gravity="center"
-        android:layout_marginTop="5dp"
+        android:textSize="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/profilebackground"
         />
 
