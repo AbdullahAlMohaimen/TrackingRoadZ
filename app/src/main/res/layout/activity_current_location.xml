@@ -105,7 +105,7 @@
             android:layout_gravity="center"
             android:textSize="28dp"
             android:textStyle="bold"
-            android:textColor="@color/t"
+            android:textColor="@color/b"
             android:textAllCaps="false"
             android:background="@drawable/textview"
             android:text="Get Location"/>

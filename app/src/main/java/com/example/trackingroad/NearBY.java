@@ -18,6 +18,7 @@ public class NearBY extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_near_b_y);
 
 
@@ -41,8 +42,8 @@ public class NearBY extends AppCompatActivity {
         attraction=(Button)findViewById(R.id.attractionButtonId);
 
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
         fuelStation.setOnClickListener(new View.OnClickListener() {
