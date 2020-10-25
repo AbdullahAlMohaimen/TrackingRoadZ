@@ -54,8 +54,8 @@ public class Login extends AppCompatActivity {
 
     static TextView distance,time,speed;
     Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
-            internetConnection,btnStart,btnStop,btnPause;
-    ImageButton distanceTwoPlace,bus,truck,bike,cycle,drivingLicense,policeStation;
+            internetConnection,btnStart,distanceTwoPlace,btnStop,btnPause,bus,
+            truck,bike,cycle,drivingLicense,policeStation;
 
     static boolean status;
     LocationManager locationManager;
@@ -188,14 +188,13 @@ public class Login extends AppCompatActivity {
         gasStationButton=(Button)findViewById(R.id.gasStationId);
         trackButton=(Button)findViewById(R.id.trackId);
         internetConnection=(Button)findViewById(R.id.checkInternetId);
-
-        distanceTwoPlace=(ImageButton) findViewById(R.id.distanceTwoPlace);
-        bus=(ImageButton) findViewById(R.id.busId);
-        cycle=(ImageButton) findViewById(R.id.cycleId);
-        bike=(ImageButton) findViewById(R.id.bikeId);
-        truck=(ImageButton) findViewById(R.id.truckId);
-        policeStation=(ImageButton) findViewById(R.id.policeStationId);
-        drivingLicense=(ImageButton) findViewById(R.id.drivingLicenseId);
+        distanceTwoPlace=(Button) findViewById(R.id.distanceTwoPlace);
+        bus=(Button) findViewById(R.id.busId);
+        cycle=(Button) findViewById(R.id.cycleId);
+        bike=(Button) findViewById(R.id.bikeId);
+        truck=(Button) findViewById(R.id.truckId);
+        policeStation=(Button) findViewById(R.id.policeStationId);
+        drivingLicense=(Button) findViewById(R.id.drivingLicenseId);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
@@ -221,7 +220,6 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -231,9 +229,6 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
-
-
         vehicleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -242,9 +237,6 @@ public class Login extends AppCompatActivity {
                 startActivity(vehicle);
             }
         });
-
-
-
 
         locationButton.setOnClickListener(new View.OnClickListener() {
             @Override

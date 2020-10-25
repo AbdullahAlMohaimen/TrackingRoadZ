@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/division"
+    android:padding="12dp"
+    tools:context=".Dhaka">
+
+    <Button
+        android:id="@+id/dhakaRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/a"
+        android:text="Range Office" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/dhakaOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Dhaka" />
+
+            <Button
+                android:id="@+id/faridpurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Faridpur" />
+
+            <Button
+                android:id="@+id/gazipurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Gazipur" />
+
+            <Button
+                android:id="@+id/gopalgonjOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Gopalgonj" />
+            <Button
+                android:id="@+id/kishorgonjOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Kishoreganj" />
+            <Button
+                android:id="@+id/madaripurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Madaripur" />
+
+            <Button
+                android:id="@+id/manikgonjOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Manikgonj" />
+
+            <Button
+                android:id="@+id/munshiganjOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Munshiganj" />
+
+            <Button
+                android:id="@+id/narayanganjOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Narayanganj" />
+
+
+            <Button
+                android:id="@+id/narsingdiOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Narsingdi" />
+
+            <Button
+                android:id="@+id/rajbariOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Rajbari" />
+
+            <Button
+                android:id="@+id/shariapurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Shariatpur" />
+
+            <Button
+                android:id="@+id/tangailOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Tangail" />
+
+            <Button
+                android:id="@+id/dhakaRRF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="RRF,Dhaka" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

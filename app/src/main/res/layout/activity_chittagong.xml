@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/division"
+    android:padding="12dp"
+    tools:context=".Chittagong">
+
+    <Button
+        android:id="@+id/chittagongRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/a"
+        android:text="Range Office"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bandarbanOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Bandarban" />
+
+            <Button
+                android:id="@+id/brahamanbariaOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Brahmanbaria" />
+
+            <Button
+                android:id="@+id/chittagongOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Chittagong" />
+
+            <Button
+                android:id="@+id/chandpurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Chandpur" />
+
+            <Button
+                android:id="@+id/coxBazarOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Cox's Bazar" />
+
+            <Button
+                android:id="@+id/cumillaOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Cumilla" />
+
+            <Button
+                android:id="@+id/feniOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Feni" />
+
+            <Button
+                android:id="@+id/khagrachoriOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Khagrachori" />
+
+
+            <Button
+                android:id="@+id/lakshmipurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Lakshmipur" />
+
+
+            <Button
+                android:id="@+id/noakhaliOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Noakhali" />
+
+            <Button
+                android:id="@+id/rangamatiOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Rangamati" />
+
+            <Button
+                android:id="@+id/chittagongRRF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Noakhali" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

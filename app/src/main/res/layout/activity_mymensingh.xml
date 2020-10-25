@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/division"
+    android:padding="12dp"
+    tools:context=".Mymensingh">
+
+    <Button
+        android:id="@+id/mymensinghRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/a"
+        android:text="Range Office" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jamalpurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Jamalpur" />
+
+
+            <Button
+                android:id="@+id/mymensinghOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Mymensingh" />
+
+            <Button
+                android:id="@+id/netrakonaOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Netrakona" />
+
+            <Button
+                android:id="@+id/sherpurOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Sherpur" />
+
+            <Button
+                android:id="@+id/mymensinghRRF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="RRF,Mymensingh" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

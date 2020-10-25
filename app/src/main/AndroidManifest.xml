@@ -19,7 +19,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PoliceStation"></activity>
+        <activity android:name=".Sylhet"></activity>
+        <activity android:name=".Rangpur" />
+        <activity android:name=".Rajshahi" />
+        <activity android:name=".Khulna" />
+        <activity android:name=".Mymensingh" />
+        <activity android:name=".Chittagong" />
+        <activity android:name=".Barishal" />
+        <activity android:name=".Dhaka" />
+        <activity android:name=".PoliceStation" />
         <activity android:name=".Cycle" />
         <activity android:name=".Bike" />
         <activity android:name=".Truck" />
