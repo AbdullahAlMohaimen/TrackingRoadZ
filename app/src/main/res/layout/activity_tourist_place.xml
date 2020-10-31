@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_y"
+    tools:context=".TouristPlace">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bagerhatTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Bagerhat" />
+
+            <Button
+                android:id="@+id/BandarbanTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Banrarban" />
+
+            <Button
+                android:id="@+id/bargunaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Barguna"/>
+
+            <Button
+                android:id="@+id/barishalTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Barishal" />
+
+            <Button
+                android:id="@+id/bholaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Bhola" />
+
+            <Button
+                android:id="@+id/boguraTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Bogura" />
+
+            <Button
+                android:id="@+id/brahmanbariaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Brahmanbaria" />
+
+            <Button
+                android:id="@+id/chandpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Chandpur" />
+
+            <Button
+                android:id="@+id/chittagongTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Chittagong" />
+
+            <Button
+                android:id="@+id/chuadangaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Chuadanga" />
+
+            <Button
+                android:id="@+id/comillaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Comilla" />
+
+            <Button
+                android:id="@+id/coxsTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Cox's Bazar" />
+
+            <Button
+                android:id="@+id/dhakaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Dhaka" />
+
+            <Button
+                android:id="@+id/dinajpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Dinajpur" />
+            <Button
+                android:id="@+id/faridpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Faridpur"/>
+
+            <Button
+                android:id="@+id/feniTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Feni" />
+
+            <Button
+                android:id="@+id/gaibandhaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Gaibandha" />
+
+
+            <Button
+                android:id="@+id/gazipurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Gazipur" />
+
+            <Button
+                android:id="@+id/gopalganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Gopalganj" />
+
+            <Button
+                android:id="@+id/habiganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Habiganj" />
+            <Button
+                android:id="@+id/jaipurhatTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Jaipurhat" />
+            <Button
+                android:id="@+id/jamalpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Jamalpur" />
+            <Button
+                android:id="@+id/jessoreTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="jessore" />
+
+            <Button
+                android:id="@+id/jhalakathiTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Jhalakathi" />
+
+            <Button
+                android:id="@+id/jhenaidahTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Jhenaidah" />
+            <Button
+                android:id="@+id/khagrachariTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Khagrachari" />
+            <Button
+                android:id="@+id/khulnaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Khulna" />
+            <Button
+                android:id="@+id/kishoreganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Kishoreganj" />
+
+            <Button
+                android:id="@+id/kurigramTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Kurigram" />
+
+            <Button
+                android:id="@+id/kushtiaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Kushtia" />
+
+            <Button
+                android:id="@+id/lakshmipurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Lakshmipur" />
+
+            <Button
+                android:id="@+id/lalmonirhatTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Lalmonirhat" />
+
+            <Button
+                android:id="@+id/madaripurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Madaripur" />
+            <Button
+                android:id="@+id/maguraTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Magura" />
+            <Button
+                android:id="@+id/manikganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Manikganj" />
+            <Button
+                android:id="@+id/meherpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Meherpur" />
+
+            <Button
+                android:id="@+id/moulvibazarTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Moulvibazar" />
+            <Button
+                android:id="@+id/munshiganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Munshiganj" />
+            <Button
+                android:id="@+id/mymensinghTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Mymensingh" />
+            <Button
+                android:id="@+id/naogaonTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Naogaon" />
+
+
+            <Button
+                android:id="@+id/narailTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Narail" />
+
+            <Button
+                android:id="@+id/narayanganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Narayanganj" />
+
+            <Button
+                android:id="@+id/narsingdiTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Narsingdi" />
+
+            <Button
+                android:id="@+id/natoreTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Natore" />
+
+            <Button
+                android:id="@+id/nawabganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Nawabganj" />
+
+            <Button
+                android:id="@+id/netrakonaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Netrakona" />
+
+            <Button
+                android:id="@+id/nilphamariTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Nilphamari" />
+
+            <Button
+                android:id="@+id/noakhaliTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Noakhali" />
+
+            <Button
+                android:id="@+id/pabnaTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Pabna" />
+            <Button
+                android:id="@+id/panchagarhTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Bagerhat" />
+            <Button
+                android:id="@+id/parbattyaChattagramTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Parbattya Chattagram" />
+            <Button
+                android:id="@+id/patuakhaliTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Patuakhali" />
+
+            <Button
+                android:id="@+id/pirojpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Pirojpur" />
+
+            <Button
+                android:id="@+id/rajbariTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Rajbari" />
+
+            <Button
+                android:id="@+id/rajshahiTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Rajshahi" />
+
+            <Button
+                android:id="@+id/rangpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Rangpur" />
+
+            <Button
+                android:id="@+id/satkhiraTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Satkhira" />
+
+            <Button
+                android:id="@+id/shariatpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Shariatpur" />
+
+            <Button
+                android:id="@+id/sherpurTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Sherpur" />
+
+            <Button
+                android:id="@+id/sirajganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Sirajganj" />
+
+            <Button
+                android:id="@+id/sunamganjTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Sunamganj" />
+            <Button
+                android:id="@+id/sylhetTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Sylhet" />
+            <Button
+                android:id="@+id/tangailTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Tangail" />
+            <Button
+                android:id="@+id/thakurgaonTourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/a"
+                android:text="Thakurgaon" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -55,7 +55,7 @@ public class Login extends AppCompatActivity {
     static TextView distance,time,speed;
     Button staticButton,mapButton,vehicleButton,locationButton,gasStationButton,trackButton,
             internetConnection,btnStart,distanceTwoPlace,btnStop,btnPause,bus,
-            truck,bike,cycle,drivingLicense,policeStation;
+            truck,bike,cycle,drivingLicense,policeStation,touristPlace;
 
     static boolean status;
     LocationManager locationManager;
@@ -195,6 +195,7 @@ public class Login extends AppCompatActivity {
         truck=(Button) findViewById(R.id.truckId);
         policeStation=(Button) findViewById(R.id.policeStationId);
         drivingLicense=(Button) findViewById(R.id.drivingLicenseId);
+        touristPlace=(Button)findViewById(R.id.touristPlace);
 
         mAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
@@ -346,6 +347,14 @@ public class Login extends AppCompatActivity {
                 btnPause.setVisibility(View.GONE);
                 btnStop.setVisibility(View.GONE);
                 p=0;
+            }
+        });
+
+        touristPlace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tourist=new Intent(getApplicationContext(),TouristPlace.class);
+                startActivity(tourist);
             }
         });
 

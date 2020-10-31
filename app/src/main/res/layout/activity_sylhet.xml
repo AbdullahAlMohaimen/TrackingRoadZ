@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:textSize="28dp"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="25dp"
         android:textColor="@color/a"
         android:text="Range Office" />
 
@@ -28,7 +28,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="22dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                 android:text="Habiganj" />
 
             <Button
-                android:id="@+id/moulovibazarOffice"
+                android:id="@+id/moulvibazarOffice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_button"
@@ -57,7 +57,7 @@
                 android:textSize="28dp"
                 android:layout_marginBottom="12dp"
                 android:textColor="@color/a"
-                android:text="Moulovibazar" />
+                android:text="Moulvibazar" />
 
             <Button
                 android:id="@+id/sunamganjOffice"
