@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/division"
+    android:padding="10dp"
+    tools:context=".ChittagongRange">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chittagong Range Office"
+        android:textStyle="bold"
+        android:textColor="@color/v"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:text="DIG"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107100"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-650120"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-655466"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="digchittagong@police.gov.bd"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fax:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-652111"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-2553393"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:text="Addl.DIG(Admin)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107102"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-652112"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-655451"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="addldigadminctg@police.gov.bd"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:text="Addl.DIG(Ops and Crime)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107103"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-2558567"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-2558568"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="addldigcrimectg@police.gov.bd"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:text="SP(Estate and Welfare)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107112"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text="SP(Discipline and Prosecution)"
+                    android:layout_gravity="center"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107113"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text="Addl.SP(Admin)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107133"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031655455"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text="Addl.SP(Estate and Welfare)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107134"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0312551900"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text="Addl.SP(Ops and Crime)"
+                    android:layout_gravity="center"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107135"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0312552680"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Staff Officer to DIG(Addl.SP)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107132"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-2557044"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sodigchittagong@police.gov.bd"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="ASP(Ops and Crime"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107163"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Inspector(Crime)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107192"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Inspector(Control Room)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107193"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Inspector(Force)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107194"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Head Assistant"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-652114"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Control Room"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107398"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="031-652113"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/g"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Hotline"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-107399"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/b"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Telephone:"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="4dp"
+                            android:textColor="@color/a"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="031-652113"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/b"
+                            android:textIsSelectable="true"/>
+                    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
