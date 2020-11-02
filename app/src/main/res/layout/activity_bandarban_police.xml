@@ -4,6 +4,4336 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_y"
     tools:context=".BandarbanPolice">
+
+
+    <SearchView
+        android:id="@+id/searchTouristPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/logical">
+    </SearchView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bandarban"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="SP,Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110400"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-662505"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="spbandarban@police.gov.bd"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fax:"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62349"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(Admin),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110402"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62215"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62263"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(Crime),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110403"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110404"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62218"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(HQ),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110405"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62227"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(Sadar Circle)"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="(Bandarban,Roangchori PS)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110446"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62251"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Addl.SP(Lama Circle)"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="(Alikodom,Naikhanchori PS)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110452"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62268"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="ASP(Ruma Circle)"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="(Ruma,Thanchi PS)"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110456"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="ASP(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62218"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="ASP(SAF),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62241"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="DIO-1(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110461"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dsbbandarban@police.gov.bd"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="DIO-2(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110462"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="DIO-3(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110463"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="DIO-4(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110464"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="DIO-5(DSB),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110465"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC(DB-1),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110658"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC(DB-2),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110659"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC(DB-3),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110660"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC(DB-4),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110661"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC(DB-5),Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110662"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Court Inspector-1"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110673"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62231"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Court Inspector-2"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-11064"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Court Inspector-3"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110675"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Court Inspector-4"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110676"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Court Inspector-5"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110677"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Traffic Inspector-1"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110688"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62219"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Traffic Inspector-2"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110689"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Traffic Inspector-3"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110690"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Traffic Inspector-4"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110691"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Traffic Inspector-5"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110692"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="RL,Police Line"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110703"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62241"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Reserve Officer(RO)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62208"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Head Assistant,Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62286"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Base,Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62276"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Control Room,Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110898"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62207"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Hotline,Bandarban"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110899"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62207"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bandarban PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Bandarban PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110476"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.ban@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110477"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.ban@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operations)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Bandarban PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110478"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.ban@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Bandarban PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110481"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62233"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roangchori PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Roangchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110502"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.roa@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Roangchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110503"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.roa@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operations)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Roangchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110504"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.roa@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Roangchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110507"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62238"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ruma PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Ruma PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110528,01820-425643"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.rum@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Ruma PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110529"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.rum@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operations)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Ruma PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110530"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.rum@police.gov.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Ruma PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110533"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0321-62278-27"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanchi PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Lama PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110554"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.tha@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Thanchi PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110555"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.tha@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operations)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Thanchi PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110556"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.tha@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Thanchi PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110559"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/g"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01827-545050"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62247-6"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lama PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Lama PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110580"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.lam@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Lama PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110581"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.lam@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Lama PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110582"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.lam@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Lama PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110585"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-71010"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alikodom"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Alikodom PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110606"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.nai@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Alikodom PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110607"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.ali@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operations)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Alikodom PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110608"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.ali@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Alikodom PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110611"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0361-62298-5"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naikhanchori PS"
+                android:textStyle="bold"
+                android:textColor="@color/b"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/upazila"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="OC Naikhanchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110632"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ocban.nai@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Investigation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Naikhanchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110633"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.nai@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Inspector(Operation)"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Naikhanchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110634"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="opsban.nai@police.gvd.bd"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/k"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/range"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textColor="@color/h"
+                    android:textStyle="bold"
+                    android:text="Duty Officer,Naikhanchori PS"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mob:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01320-110637"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/g"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0321-62240-5"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/z"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

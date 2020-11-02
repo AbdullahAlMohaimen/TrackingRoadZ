@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/division"
+    android:background="@drawable/background_v"
     android:padding="10dp"
     tools:context=".ChittagongRange">
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Chittagong Range Office"
         android:textStyle="bold"
-        android:textColor="@color/v"
+        android:textColor="@color/q"
         android:gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:textSize="30dp"/>
@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:text="DIG"
                     android:layout_gravity="center"
@@ -56,11 +56,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -81,11 +81,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -124,18 +124,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email:"
-                        android:textSize="20dp"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="digchittagong@police.gov.bd"
-                        android:textSize="24dp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/h"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -149,10 +149,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fax:"
-                        android:textSize="20dp"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -177,7 +177,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -188,14 +188,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/range">
+                android:background="@drawable/range"
+                android:gravity="center">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:text="Addl.DIG(Admin)"
                     android:layout_gravity="center"
@@ -210,11 +211,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -222,7 +223,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -235,11 +236,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -247,7 +248,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -264,7 +265,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -282,16 +283,17 @@
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="addldigadminctg@police.gov.bd"
-                        android:textSize="24dp"
-                        android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
-                        android:textIsSelectable="true"/>
+                        android:text="addldigadminctg@police.gov.bd"
+                        android:textColor="@color/h"
+                        android:textIsSelectable="true"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
 
@@ -302,13 +304,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/range">
+                android:background="@drawable/range"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:text="Addl.DIG(Ops and Crime)"
                     android:layout_gravity="center"
@@ -323,11 +326,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -335,7 +338,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -348,11 +351,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -360,7 +363,7 @@
                         android:textSize="21dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -377,7 +380,7 @@
                         android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -392,18 +395,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email:"
-                        android:textSize="20dp"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="addldigcrimectg@police.gov.bd"
-                        android:textSize="24dp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/h"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -421,7 +424,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:text="SP(Estate and Welfare)"
                     android:layout_gravity="center"
@@ -436,11 +439,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -448,7 +451,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -468,7 +471,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="26dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:text="SP(Discipline and Prosecution)"
@@ -485,11 +488,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -497,7 +500,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -515,7 +518,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:text="Addl.SP(Admin)"
@@ -531,11 +534,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -543,7 +546,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -556,11 +559,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -568,7 +571,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -586,7 +589,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:text="Addl.SP(Estate and Welfare)"
@@ -602,11 +605,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -614,7 +617,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -627,11 +630,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -639,7 +642,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
             </LinearLayout>
@@ -656,7 +659,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:text="Addl.SP(Ops and Crime)"
@@ -673,11 +676,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -685,7 +688,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -698,11 +701,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -710,7 +713,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -728,7 +731,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Staff Officer to DIG(Addl.SP)"
@@ -744,11 +747,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -756,7 +759,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -769,11 +772,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -781,7 +784,7 @@
                         android:textSize="21dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -796,19 +799,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email:"
-                        android:textSize="20dp"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="sodigchittagong@police.gov.bd"
-                        android:textSize="24dp"
-                        android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
-                        android:textIsSelectable="true"/>
+                        android:text="sodigchittagong@police.gov.bd"
+                        android:textColor="@color/h"
+                        android:textIsSelectable="true"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -824,7 +828,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="ASP(Ops and Crime"
@@ -840,11 +844,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -852,7 +856,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -870,7 +874,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Inspector(Crime)"
@@ -886,11 +890,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -898,7 +902,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -916,7 +920,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Inspector(Control Room)"
@@ -932,11 +936,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -944,7 +948,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -962,7 +966,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Inspector(Force)"
@@ -978,11 +982,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -990,7 +994,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
             </LinearLayout>
@@ -1007,7 +1011,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Head Assistant"
@@ -1023,11 +1027,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1035,7 +1039,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -1053,7 +1057,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Control Room"
@@ -1069,11 +1073,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1081,7 +1085,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -1094,11 +1098,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Telephone:"
-                        android:textSize="20dp"
+                        android:text="Tel:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1106,7 +1110,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -1123,7 +1127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="28dp"
-                    android:textColor="@color/g"
+                    android:textColor="@color/k"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp"
                     android:text="Hotline"
@@ -1139,11 +1143,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile:"
-                        android:textSize="20dp"
+                        android:text="Mob:"
+                        android:textSize="22dp"
                         android:textStyle="bold"
                         android:layout_marginRight="4dp"
-                        android:textColor="@color/a"/>
+                        android:textColor="@color/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1151,7 +1155,7 @@
                         android:textSize="23dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="4dp"
-                        android:textColor="@color/b"
+                        android:textColor="@color/m"
                         android:textIsSelectable="true"/>
                 </LinearLayout>
 
@@ -1164,11 +1168,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Telephone:"
-                            android:textSize="20dp"
+                            android:text="Tel:"
+                            android:textSize="22dp"
                             android:textStyle="bold"
                             android:layout_marginRight="4dp"
-                            android:textColor="@color/a"/>
+                            android:textColor="@color/g"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1176,7 +1180,7 @@
                             android:textSize="23dp"
                             android:textStyle="bold"
                             android:layout_marginLeft="4dp"
-                            android:textColor="@color/b"
+                            android:textColor="@color/m"
                             android:textIsSelectable="true"/>
                     </LinearLayout>
             </LinearLayout>
